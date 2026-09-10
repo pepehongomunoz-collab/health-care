@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   1. Navbar & Navigation
+   2. Navbar & Navigation
    ========================================================================== */
 function initNavbarScroll() {
     const navbar = document.getElementById('navbar');
