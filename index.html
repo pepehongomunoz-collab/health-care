@@ -1,1048 +1,904 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaMetabolic™ | Medicina de Precisión y Tratamiento Integral de la Obesidad</title>
-    <meta name="description" content="Tratamientos médicos de última generación para la obesidad. Farmacoterapia dual GLP-1/GIP, bioimpedancia médica, telemetría y reprogramación metabólica sin efecto rebote.">
-    <meta name="keywords" content="tratamiento obesidad, medicina metabolica, GLP-1, endocrinologia, perdida de peso medica, bioimpedancia, salud metabolica">
-    
-    <!-- Open Graph / Social Meta -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="NovaMetabolic™ | Tratamiento Médico de la Obesidad de Última Generación">
-    <meta property="og:description" content="Ciencia, tecnología y medicina de precisión para transformar tu salud metabólica de forma definitiva.">
-    
-    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaMetabolic™ | Medicina Metabólica & Endocrinología de Precisión</title>
+  <meta name="description" content="Centro médico de alta complejidad especializado en medicina de precisión, farmacoterapia GLP-1/GIP, bioimpedancia y reprogramación metabólica sin efecto rebote.">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter+Tight:ital,wght@0,300..900;1,300..900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-sans antialiased overflow-x-hidden">
+<body>
 
-    <!-- Navigation Bar -->
-    <header class="navbar" id="navbar">
-        <div class="container navbar-container">
-            <a href="#" class="brand-logo" aria-label="NovaMetabolic Inicio">
-                <div class="logo-icon">
-                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="16" cy="16" r="14" stroke="url(#logoGrad)" stroke-width="2.5" opacity="0.4"/>
-                        <path d="M16 6V26M6 16H26" stroke="url(#logoGrad)" stroke-width="3" stroke-linecap="round"/>
-                        <circle cx="16" cy="16" r="4" fill="#00E5BE"/>
-                        <defs>
-                            <linearGradient id="logoGrad" x1="6" y1="6" x2="26" y2="26" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#00E5BE"/>
-                                <stop offset="0.5" stop-color="#0EA5E9"/>
-                                <stop offset="1" stop-color="#6366F1"/>
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="logo-text">
-                    <span class="brand-name">Nova<span class="text-gradient">Metabolic</span></span>
-                    <span class="brand-subtitle">CENTRO MÉDICO DE PRECISIÓN</span>
-                </div>
-            </a>
+<div class="page">
 
-            <nav class="nav-menu" id="navMenu">
-                <a href="#innovacion" class="nav-link">Innovación</a>
-                <a href="#metodo" class="nav-link">Método 360°</a>
-                <a href="#calculadora" class="nav-link">Diagnóstico</a>
-                <a href="#resultados" class="nav-link">Casos de Éxito</a>
-                <a href="#equipo" class="nav-link">Especialistas</a>
-                <a href="#faq" class="nav-link">Preguntas</a>
-            </nav>
+  <!-- ─── ATMOSPHERIC GLOWS & WAVE RIBBON ─── -->
+  <div class="wave-glow"></div>
+  <div class="wave-glow b"></div>
+  <div class="wave-wrap" id="wave">
+    <img src="https://cdn.shopify.com/s/files/1/0185/5999/1872/files/blue_strand_transparent.png?v=1778949964" alt="Flowing blue and teal data ribbon" onerror="this.style.display='none'">
+  </div>
 
-            <div class="nav-actions">
-                <a href="https://wa.me/5491100000000?text=Hola%20NovaMetabolic,%20deseo%20informaci%C3%B3n%20sobre%20el%20tratamiento%20m%C3%A9dico" target="_blank" rel="noopener" class="btn-icon" aria-label="Consulta por WhatsApp">
-                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                </a>
-                <button class="btn btn-primary" onclick="openBookingModal()">
-                    <span>Agendar Cita</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-                <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menú">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
+  <!-- ─── BACKGROUND GIANT WATERMARK TEXT ─── -->
+  <div class="bg-text" aria-hidden="true">NOVAMETABOLIC</div>
+
+  <!-- ─── HEADER / NAVBAR ─── -->
+  <header class="header" role="banner">
+    <a class="logo" href="#" aria-label="NovaMetabolic Inicio">
+      <div class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M4 12h6m4 0h6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+          <path d="M12 4v6m0 4v6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="12" cy="12" r="2" fill="currentColor" />
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="a">NovaMetabolic™</span>
+        <span class="b">Medicina de Precisión</span>
+      </div>
+    </a>
+
+    <nav class="nav-pills" aria-label="Navegación Principal">
+      <a class="nav-pill active" href="#inicio">
+        <i class="ph ph-house"></i>
+        Inicio
+      </a>
+      <a class="nav-pill" href="#innovacion">
+        <i class="ph ph-dna"></i>
+        Innovación
+      </a>
+      <a class="nav-pill" href="#metodo">
+        <i class="ph ph-arrows-clockwise"></i>
+        Método 360°
+      </a>
+      <a class="nav-pill" href="#calculadora">
+        <i class="ph ph-calculator"></i>
+        Diagnóstico
+      </a>
+      <a class="nav-pill" href="#casos">
+        <i class="ph ph-chart-line-up"></i>
+        Casos de Éxito
+      </a>
+      <a class="nav-pill" href="#equipo">
+        <i class="ph ph-user-circle-gear"></i>
+        Especialistas
+      </a>
+      <a class="nav-pill" href="#faq">
+        <i class="ph ph-question"></i>
+        FAQ
+      </a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://wa.me/5491100000000?text=Hola%20NovaMetabolic,%20deseo%20informaci%C3%B3n%20sobre%20el%20tratamiento%20m%C3%A9dico" target="_blank" rel="noopener" class="header-wa-btn" aria-label="Consultar por WhatsApp">
+        <i class="ph ph-whatsapp-logo"></i>
+      </a>
+      <button class="header-cta" onclick="openBookingModal('Header')" aria-label="Agendar Consulta Médica">
+        <span class="cta-text">Agendar Consulta</span>
+        <span class="cta-dot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17 L17 7" />
+            <path d="M8 7 H17 V16" />
+          </svg>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ─── HERO SECTION ─── -->
+  <section class="hero" id="inicio">
+    <span class="eyebrow">🔬 Farmacoterapia GLP-1/GIP & Reprogramación Metabólica</span>
+
+    <h1 class="title">
+      <div class="title-line title-line-1">
+        <span class="word">MEDICINA METABÓLICA:</span>
+      </div>
+      <div class="title-line has-desc">
+        <p class="title-desc">Revertimos la resistencia biológica y el set-point neuroendocrino con ciencia de vanguardia</p>
+        <span class="paren-group">
+          <span class="paren">(</span>
+          <span class="avatar-group" aria-hidden="true">
+            <img src="assets/doctor-montes.jpg" alt="Dra. Montes" title="Dra. Valentina Montes">
+            <img src="assets/doctor-benitez.jpg" alt="Dr. Benítez" title="Dr. Esteban Benítez">
+            <img src="assets/doctor-navarro.jpg" alt="Dra. Navarro" title="Dra. Lucía Navarro">
+          </span>
+          <span class="icon-tile dna-icon" title="Sensor de Monitoreo Continuo">
+            <svg height="30px" width="30px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+              <path d="M351.815,128.59c-1.797-18.117-1.44-34.865,2.855-50.696c2.162-7.924,5.319-15.645,9.774-23.276 c4.473-7.649,10.264-15.209,17.77-22.715l12.327-12.328L374.975,0l-12.336,12.319c-11.554,11.553-20.056,23.72-25.98,36.34 c-8.929,18.962-11.989,38.893-11.767,58.842c0.187,19.967,3.504,40.041,7.321,60.204c2.49,13.136,4.642,25.775,5.843,37.844 c1.805,18.117,1.441,34.874-2.864,50.696c-2.152,7.916-5.31,15.644-9.774,23.284c-4.474,7.64-10.264,15.191-17.77,22.698v0.009 h0.009l-5.417,5.416c-1.449,1.441-2.882,2.82-4.349,4.145l-88.637-88.637c-4.376,4.82-8.068,9.748-11.216,14.915l85.134,85.124 c-3.762,2.402-7.534,4.482-11.331,6.261c-4.207,1.984-8.449,3.611-12.772,4.91l-71.365-71.365 c-1.708,7.16-2.624,14.835-2.793,23.355l52.207,52.199c-4.535,0.4-9.16,0.542-13.883,0.516 c-10.575-0.106-21.603-1.228-33.112-2.979c0.48,2.632,0.943,5.158,1.414,7.622c1.147,5.967,2.285,12.238,3.335,18.722 c3.94,0.552,7.862,1.014,11.784,1.405c20.003,1.984,40.041,1.743,59.572-3.558c9.766-2.641,19.345-6.564,28.639-12.007 c9.285-5.434,18.303-12.398,26.949-21.043l5.407-5.425c11.554-11.536,20.047-23.711,25.997-36.34 c8.921-18.963,11.971-38.876,11.767-58.834c-0.205-19.967-3.514-40.05-7.32-60.204C355.159,153.288,353.015,140.659,351.815,128.59 z" />
+            </svg>
+          </span>
+          <span class="paren">)</span>
+        </span>
+        <span class="word">SIN EFECTO</span>
+      </div>
+      <div class="title-line">
+        <span class="word">REBOTE</span>
+        <span class="future-tag">
+          <span class="hero-desc-right">
+            <i class="ph-fill ph-check-circle"></i> Protocolo 100% supervisado por <strong>médicos especialistas</strong>
+          </span>
+        </span>
+      </div>
+    </h1>
+
+    <!-- Circular spinning badge -->
+    <div class="badge" aria-hidden="true" onclick="openBookingModal('Badge')">
+      <svg class="ring" viewBox="0 0 100 100">
+        <defs>
+          <path id="badge-path" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" fill="none" />
+        </defs>
+        <text font-family="Inter Tight, sans-serif" font-size="9" font-weight="600" fill="#2b2b30" letter-spacing="2.2">
+          <textPath href="#badge-path">Precision · Endocrinology · Metabolic Reset · </textPath>
+        </text>
+      </svg>
+      <span class="badge-center">
+        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 10 L9 5 M9 5 L15 5 L15 11" />
+          <path d="M9 5 L9 15" />
+          <path d="M4 15 L15 15" />
+        </svg>
+      </span>
+    </div>
+  </section>
+
+  <!-- ─── METRIC HIGHLIGHT PILLS ─── -->
+  <nav class="resource-list" aria-label="Métricas Clave">
+    <a href="#casos" class="res-item active">
+      <span class="label"><strong>94.8%</strong> Éxito Reducción Grasa <span style="color:var(--mute-2)">/&nbsp;01</span></span>
+      <span class="dots"><span></span><span></span><span></span></span>
+      <span class="arrow"><i class="ph ph-arrow-right"></i></span>
+    </a>
+    <a href="#calculadora" class="res-item">
+      <span class="label"><strong>-18.5%</strong> Peso Corporal Promedio <span style="color:var(--mute-2)">/&nbsp;02</span></span>
+      <span class="dots"><span></span><span></span><span></span></span>
+      <span class="arrow"><i class="ph ph-arrow-right"></i></span>
+    </a>
+    <a href="#innovacion" class="res-item">
+      <span class="label"><strong>Dual GLP-1/GIP</strong> Modulación Central <span style="color:var(--mute-2)">/&nbsp;03</span></span>
+      <span class="dots"><span></span><span></span><span></span></span>
+      <span class="arrow"><i class="ph ph-arrow-right"></i></span>
+    </a>
+  </nav>
+
+  <!-- ─── HERO BOTTOM CARDS (DOCTOR + BIOMONITORING) ─── -->
+  <section class="bottom">
+    <div class="doctor-cluster reveal">
+      <div class="clay-card doctor-card">
+        <div class="doctor-avatar">
+          <img src="assets/doctor-montes.jpg" alt="Dra. Valentina Montes">
         </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-glow-bg"></div>
-            <div class="hero-glow-secondary"></div>
-            <div class="container hero-grid">
-                
-                <!-- Hero Left Content -->
-                <div class="hero-content">
-                    <div class="inline-badge">
-                        <span class="badge-icon">🔬</span>
-                        <span>Medicina Basada en Evidencia y Farmacogenómica</span>
-                    </div>
-
-                    <h1 class="hero-title">
-                        El fin de las dietas restrictivas. <br>
-                        <span class="text-gradient">Medicina Metabólica</span> de Precisión.
-                    </h1>
-
-                    <p class="hero-description">
-                        Tratamos la obesidad desde su origen biológico, neuroendocrino y celular. Combinamos agonistas duales de última generación, biomonitoreo digital continuo y reestructuración metabólica definitiva, sin efecto rebote y preservando tu masa muscular.
-                    </p>
-
-                    <div class="hero-cta-group">
-                        <button class="btn btn-primary btn-lg shadow-glow" onclick="openBookingModal()">
-                            <span>Iniciar Mi Tratamiento</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </button>
-                        <a href="#calculadora" class="btn btn-outline btn-lg">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
-                            <span>Test de Salud Metabólica</span>
-                        </a>
-                    </div>
-
-                    <!-- Trust Stats Bar -->
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number" data-count="94.8">0%</span>
-                            <span class="stat-label">Éxito en Reducción de Grasa Visceral</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-count="18.5">0%</span>
-                            <span class="stat-label">Promedio de Pérdida de Peso Corporal</span>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <span class="stat-number">0%</span>
-                            <span class="stat-label">Pérdida de Masa Muscular Magra</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hero Right Interactive Card -->
-                <div class="hero-visual">
-                    <div class="floating-telemetry-card glass-panel">
-                        <!-- Card Header -->
-                        <div class="telemetry-header">
-                            <div class="patient-pill">
-                                <span class="status-indicator"></span>
-                                <div>
-                                    <div class="patient-name">Bio-Monitoreo NovaMetabolic™</div>
-                                    <div class="patient-meta">Protocolo Dual GLP-1 / GIP Activo</div>
-                                </div>
-                            </div>
-                            <span class="badge-tech">TIEMPO REAL</span>
-                        </div>
-
-                        <!-- Main Metric Display -->
-                        <div class="metric-highlight-box">
-                            <div class="metric-top">
-                                <span class="metric-title">Índice de Eficiencia Metabólica</span>
-                                <span class="trend-badge positive">+38% Óptimo</span>
-                            </div>
-                            <div class="metric-big-value">
-                                <span class="num">92.4</span><span class="unit">/100 pts</span>
-                            </div>
-                            <div class="progress-bar-container">
-                                <div class="progress-fill" style="width: 92.4%;"></div>
-                            </div>
-                        </div>
-
-                        <!-- Live Graph Simulation -->
-                        <div class="telemetry-graph-card">
-                            <div class="graph-header">
-                                <span>Curva Glucémica y Saciedad (CGM Sensor)</span>
-                                <span class="text-emerald">Estabilidad 98.6%</span>
-                            </div>
-                            <div class="cgm-chart-container">
-                                <svg class="chart-svg" viewBox="0 0 360 90">
-                                    <defs>
-                                        <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="0%" stop-color="#00E5BE" stop-opacity="0.4"/>
-                                            <stop offset="100%" stop-color="#00E5BE" stop-opacity="0.0"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <!-- Area Fill -->
-                                    <path d="M5,70 Q40,65 80,45 T160,35 T240,25 T300,20 T345,18 L345,90 L5,90 Z" fill="url(#chartGrad)"/>
-                                    <!-- Target Green Zone Line -->
-                                    <line x1="5" y1="50" x2="355" y2="50" stroke="#334155" stroke-dasharray="4 4" stroke-width="1.5"/>
-                                    <!-- Dynamic Line -->
-                                    <path class="animated-line" d="M5,70 Q40,65 80,45 T160,35 T240,25 T300,20 T345,18" fill="none" stroke="#00E5BE" stroke-width="3" stroke-linecap="round"/>
-                                    <circle cx="345" cy="18" r="4.5" fill="#00E5BE" class="pulse-point"/>
-                                </svg>
-                            </div>
-                            <div class="chart-footer-metrics">
-                                <div><small>Glucosa Media</small><strong>91 mg/dL</strong></div>
-                                <div><small>Sensibilidad Insulínica</small><strong>Alta</strong></div>
-                                <div><small>Preservación Muscular</small><strong>96.2%</strong></div>
-                            </div>
-                        </div>
-
-                        <!-- Floating Micro Badges -->
-                        <div class="floating-badge badge-top-right glass-card">
-                            <div class="badge-icon-sq bg-teal">🧬</div>
-                            <div>
-                                <strong>Farmacología Dual</strong>
-                                <small>Receptores GLP-1 + GIP</small>
-                            </div>
-                        </div>
-
-                        <div class="floating-badge badge-bottom-left glass-card">
-                            <div class="badge-icon-sq bg-indigo">🛡️</div>
-                            <div>
-                                <strong>Sin Efecto Rebote</strong>
-                                <small>Reset Hipotalámico</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Scientific Innovation Pillars -->
-        <section class="section-padding bg-slate-900/50" id="innovacion">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Pilares de Vanguardia</span>
-                    <h2 class="section-title">La diferencia entre hacer una dieta y transformar tu biología</h2>
-                    <p class="section-subtitle">
-                        La obesidad es una enfermedad metabólica compleja y neuroregulada, no una falta de fuerza de voluntad. Nuestro abordaje médico ataca los mecanismos hormonales que impiden la pérdida de peso.
-                    </p>
-                </div>
-
-                <div class="grid-cards-4">
-                    <!-- Pillar 1 -->
-                    <div class="feature-card glass-panel">
-                        <div class="card-icon-wrapper bg-teal-glow">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 20.5 3 13l7.5-7.5M13.5 3.5 21 11l-7.5 7.5M14 8l-4 8"/></svg>
-                        </div>
-                        <h3 class="card-title">Agonistas Duales GLP-1 / GIP</h3>
-                        <p class="card-text">
-                            Moléculas terapéuticas de última generación que actúan sobre los centros hipotalámicos de la saciedad, reducen el "ruido de comida" (food noise) y optimizan la secreción de insulina.
-                        </p>
-                        <div class="card-footer-tag">Alta Precisión Médica</div>
-                    </div>
-
-                    <!-- Pillar 2 -->
-                    <div class="feature-card glass-panel">
-                        <div class="card-icon-wrapper bg-blue-glow">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
-                        </div>
-                        <h3 class="card-title">Bioimpedancia Médica 8 Electrodos</h3>
-                        <p class="card-text">
-                            Análisis segmentario clínico de grado hospitalario. Monitoreamos miligramo a miligramo que pierdas grasa visceral inflamatoria mientras tu masa muscular esquelética se mantiene intacta.
-                        </p>
-                        <div class="card-footer-tag">Evaluación Celular</div>
-                    </div>
-
-                    <!-- Pillar 3 -->
-                    <div class="feature-card glass-panel">
-                        <div class="card-icon-wrapper bg-indigo-glow">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                        </div>
-                        <h3 class="card-title">Biomonitoreo CGM & Telemetría</h3>
-                        <p class="card-text">
-                            Sensores continuos que transmiten tus patrones de respuesta metabólica 24/7 a nuestro equipo médico, permitiendo ajustes terapéuticos dinámicos e individualizados.
-                        </p>
-                        <div class="card-footer-tag">Digital Health 24/7</div>
-                    </div>
-
-                    <!-- Pillar 4 -->
-                    <div class="feature-card glass-panel">
-                        <div class="card-icon-wrapper bg-emerald-glow">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        </div>
-                        <h3 class="card-title">Reprogramación y Longevidad</h3>
-                        <p class="card-text">
-                            Fase de mantenimiento inteligente que reconfigura el "set-point" de tu peso corporal. Blindamos tu metabolismo contra el efecto rebote para que los resultados sean de por vida.
-                        </p>
-                        <div class="card-footer-tag">Protección Permanente</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive 360 Protocol Steps -->
-        <section class="section-padding" id="metodo">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-tag">El Método NovaMetabolic™</span>
-                    <h2 class="section-title">Un protocolo de 4 fases diseñado para resultados sostenibles</h2>
-                    <p class="section-subtitle">Acompañamiento médico continuo, sin pasar hambre y con control estricto de tu seguridad biológica.</p>
-                </div>
-
-                <div class="timeline-container">
-                    <div class="timeline-line"></div>
-
-                    <!-- Step 1 -->
-                    <div class="timeline-step">
-                        <div class="step-badge">01</div>
-                        <div class="step-card glass-panel">
-                            <div class="step-meta">FASE 1: DIAGNÓSTICO PROFUNDO</div>
-                            <h3 class="step-title">Mapeo Bioquímico & Hormonal Integral</h3>
-                            <p class="step-desc">
-                                Análisis de laboratorio exhaustivo (perfil lipídico avanzado, HOMA-IR, función tiroidea, cortisol, leptina, vitaminas) y estudio de bioimpedancia segmentaria para entender tu fenotipo metabólico exacto.
-                            </p>
-                            <ul class="step-features">
-                                <li>✓ Panel de 32 biomarcadores clave</li>
-                                <li>✓ Mapeo de grasa visceral e intramuscular</li>
-                                <li>✓ Consulta diagnóstica con Médico Especialista</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="timeline-step">
-                        <div class="step-badge">02</div>
-                        <div class="step-card glass-panel">
-                            <div class="step-meta">FASE 2: INDUCCIÓN & FARMACOTERAPIA</div>
-                            <h3 class="step-title">Prescripción de Precisión & Reseteo del Apetito</h3>
-                            <p class="step-desc">
-                                Inicio supervisado del tratamiento farmacológico adaptado a tu tolerancia. Disminución inmediata de la compulsión alimentaria y aceleración de la oxidación de grasas desde la primera semana.
-                            </p>
-                            <ul class="step-features">
-                                <li>✓ Farmacoterapia dual de última generación</li>
-                                <li>✓ Eliminación del "ruido de comida" y ansiedad</li>
-                                <li>✓ Monitoreo y ajuste progresivo de dosis</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="timeline-step">
-                        <div class="step-badge">03</div>
-                        <div class="step-card glass-panel">
-                            <div class="step-meta">FASE 3: OPTIMIZACIÓN ACTIVA</div>
-                            <h3 class="step-title">Nutrición Funcional y Preservación Muscular</h3>
-                            <p class="step-desc">
-                                Plan de macronutrientes de alta densidad y estímulo muscular metabólico para elevar tu tasa metabólica basal (TMB). Tu cuerpo aprende a quemar calorías eficientemente.
-                            </p>
-                            <ul class="step-features">
-                                <li>✓ Nutrición de precisión (sin dietas líquidas ni extremas)</li>
-                                <li>✓ Prescripción de ejercicio para síntesis miofibrilar</li>
-                                <li>✓ Consultas quincenales multidisciplinarias</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Step 4 -->
-                    <div class="timeline-step">
-                        <div class="step-badge">04</div>
-                        <div class="step-card glass-panel">
-                            <div class="step-meta">FASE 4: CONSOLIDACIÓN</div>
-                            <h3 class="step-title">Fijación del Nuevo Set-Point y Longevidad</h3>
-                            <p class="step-desc">
-                                Retirada o modulación gradual del soporte farmacológico manteniendo el peso alcanzado. Consolidación de hábitos neurobiológicos y marcadores de longevidad celular.
-                            </p>
-                            <ul class="step-features">
-                                <li>✓ Tapering farmacológico personalizado</li>
-                                <li>✓ Cero efecto rebote garantizado por protocolo</li>
-                                <li>✓ Chequeos de seguimiento preventivo a largo plazo</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center mt-12">
-                    <button class="btn btn-primary btn-lg" onclick="openBookingModal()">
-                        <span>Quiero Iniciar Mi Diagnóstico</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Metabolic Assessment Tool -->
-        <section class="section-padding bg-slate-900/80 relative" id="calculadora">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Autodiagnóstico Clínico</span>
-                    <h2 class="section-title">Calcula tu Perfil de Salud Metabólica</h2>
-                    <p class="section-subtitle">Descubre en 60 segundos si eres candidato a tratamientos médicos de última generación y recibe una estimación personalizada.</p>
-                </div>
-
-                <div class="calculator-wrapper glass-panel">
-                    <!-- Progress Bar -->
-                    <div class="calc-progress-wrapper">
-                        <div class="calc-progress-bar">
-                            <div class="calc-progress-inner" id="calcProgressBar" style="width: 25%;"></div>
-                        </div>
-                        <div class="calc-steps-indicator">
-                            <span class="step-num active" id="stepIndicator1">Paso 1: Biometría</span>
-                            <span class="step-num" id="stepIndicator2">Paso 2: Objetivos</span>
-                            <span class="step-num" id="stepIndicator3">Paso 3: Síntomas</span>
-                            <span class="step-num" id="stepIndicator4">Paso 4: Resultado</span>
-                        </div>
-                    </div>
-
-                    <!-- Step 1: Basic Metrics -->
-                    <div class="calc-step active" id="calcStep1">
-                        <h3 class="calc-step-title">1. Datos biométricos iniciales</h3>
-                        <div class="form-grid-2">
-                            <div class="form-group">
-                                <label for="calcGender">Género biológico</label>
-                                <select id="calcGender" class="form-control">
-                                    <option value="female">Femenino</option>
-                                    <option value="male">Masculino</option>
-                                    <option value="other">Otro</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="calcAge">Edad (años)</label>
-                                <input type="number" id="calcAge" class="form-control" placeholder="Ej. 38" min="18" max="90" value="38">
-                            </div>
-                            <div class="form-group">
-                                <label for="calcHeight">Estatura (cm)</label>
-                                <input type="number" id="calcHeight" class="form-control" placeholder="Ej. 170" min="120" max="230" value="168">
-                            </div>
-                            <div class="form-group">
-                                <label for="calcWeight">Peso actual (kg)</label>
-                                <input type="number" id="calcWeight" class="form-control" placeholder="Ej. 88" min="40" max="250" value="89">
-                            </div>
-                        </div>
-                        <div class="calc-actions">
-                            <div></div>
-                            <button type="button" class="btn btn-primary" onclick="nextCalcStep(2)">
-                                <span>Siguiente &rarr;</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Step 2: Weight History & Goal -->
-                    <div class="calc-step" id="calcStep2">
-                        <h3 class="calc-step-title">2. Historial e Intentos Previos</h3>
-                        <div class="form-group mb-6">
-                            <label>¿Cuántos kilos te gustaría perder de forma saludable?</label>
-                            <div class="range-container">
-                                <input type="range" id="calcTargetLoss" min="5" max="50" value="18" class="form-range" oninput="document.getElementById('targetLossVal').innerText = this.value">
-                                <div class="range-val-badge"><span id="targetLossVal">18</span> kg a reducir</div>
-                            </div>
-                        </div>
-
-                        <div class="form-group mb-6">
-                            <label>¿Has experimentado el efecto rebote con dietas tradicionales anteriormente?</label>
-                            <div class="options-grid">
-                                <label class="option-card">
-                                    <input type="radio" name="rebound" value="multiple" checked>
-                                    <div class="option-content">
-                                        <strong>Sí, más de 2 veces</strong>
-                                        <small>Bajo peso pero lo recupero rápidamente</small>
-                                    </div>
-                                </label>
-                                <label class="option-card">
-                                    <input type="radio" name="rebound" value="once">
-                                    <div class="option-content">
-                                        <strong>Sí, al menos una vez</strong>
-                                        <small>He recuperado el peso perdido</small>
-                                    </div>
-                                </label>
-                                <label class="option-card">
-                                    <input type="radio" name="rebound" value="never">
-                                    <div class="option-content">
-                                        <strong>No / Es mi primer intento</strong>
-                                        <small>Busco un método seguro y definitivo</small>
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="calc-actions">
-                            <button type="button" class="btn btn-outline" onclick="prevCalcStep(1)">Atrás</button>
-                            <button type="button" class="btn btn-primary" onclick="nextCalcStep(3)">Siguiente &rarr;</button>
-                        </div>
-                    </div>
-
-                    <!-- Step 3: Symptoms & Hormonal Factors -->
-                    <div class="calc-step" id="calcStep3">
-                        <h3 class="calc-step-title">3. Factores Metabólicos y Síntomas Asociados</h3>
-                        <p class="text-slate-400 text-sm mb-4">Selecciona las condiciones que presentas actualmente:</p>
-
-                        <div class="checkbox-grid">
-                            <label class="checkbox-card">
-                                <input type="checkbox" id="symp1" checked>
-                                <span>Ansiedad por comer dulce o ultraprocesados por la tarde/noche ("Food Noise")</span>
-                            </label>
-                            <label class="checkbox-card">
-                                <input type="checkbox" id="symp2" checked>
-                                <span>Cansancio crónico, falta de energía o pesadez después de comer</span>
-                            </label>
-                            <label class="checkbox-card">
-                                <input type="checkbox" id="symp3">
-                                <span>Resistencia a la insulina, prediabetes o diabetes tipo 2</span>
-                            </label>
-                            <label class="checkbox-card">
-                                <input type="checkbox" id="symp4">
-                                <span>Presión arterial elevada o colesterol/triglicéridos altos</span>
-                            </label>
-                            <label class="checkbox-card">
-                                <input type="checkbox" id="symp5">
-                                <span>Dificultad para conciliar el sueño o ronquidos nocturnos / apnea</span>
-                            </label>
-                            <label class="checkbox-card">
-                                <input type="checkbox" id="symp6">
-                                <span>Hígado graso o inflamación abdominal frecuente</span>
-                            </label>
-                        </div>
-
-                        <div class="calc-actions mt-6">
-                            <button type="button" class="btn btn-outline" onclick="prevCalcStep(2)">Atrás</button>
-                            <button type="button" class="btn btn-primary shadow-glow" onclick="calculateMetabolicProfile()">
-                                <span>Analizar Mi Perfil Clínico &rarr;</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Step 4: Tailored Result & Clinical Assessment -->
-                    <div class="calc-step" id="calcStep4">
-                        <div class="result-header text-center">
-                            <div class="result-score-badge">
-                                <span class="badge-icon">🎯</span>
-                                <span>PERFIL DE ALTA ELEGIBILIDAD MÉDICA</span>
-                            </div>
-                            <h3 class="result-title">Tu Análisis de Salud Metabólica Personalizado</h3>
-                            <p class="text-slate-400 max-w-xl mx-auto">Basado en tus parámetros biométricos y síntomas neuroendocrinos:</p>
-                        </div>
-
-                        <div class="result-cards-grid">
-                            <div class="result-stat-card">
-                                <span class="label">IMC Calculado</span>
-                                <div class="val" id="resBMI">31.5</div>
-                                <span class="status-tag status-alert" id="resBMILabel">Obesidad Grado I</span>
-                            </div>
-                            <div class="result-stat-card">
-                                <span class="label">Estimación Pérdida Grasa</span>
-                                <div class="val text-teal" id="resWeightLoss">-16.5 kg</div>
-                                <span class="status-tag status-success">Proyección 16-24 semanas</span>
-                            </div>
-                            <div class="result-stat-card">
-                                <span class="label">Tasa de Respuesta Esperada</span>
-                                <div class="val text-indigo" id="resSuccessRate">96.4%</div>
-                                <span class="status-tag status-info">Con Farmacoterapia Dual</span>
-                            </div>
-                        </div>
-
-                        <div class="recommendation-box glass-card">
-                            <div class="rec-icon">💡</div>
-                            <div class="rec-body">
-                                <h4>Tratamiento Recomendado para Tu Perfil:</h4>
-                                <p id="resRecommendationText">
-                                    Presentas indicios claros de desregulación neuroendocrina y fatiga metabólica. Eres candidato óptimo para nuestro <strong>Protocolo Dual GLP-1/GIP con bio-monitoreo glucémico continuo</strong> y preservación de masa muscular magra.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="calc-result-cta">
-                            <div class="cta-banner">
-                                <div>
-                                    <h4>¿Deseas una valoración médica personalizada con nuestros especialistas?</h4>
-                                    <p>Recibe la orden de laboratorio completa y el plan de tratamiento exacto.</p>
-                                </div>
-                                <button class="btn btn-primary btn-lg shadow-glow" onclick="openBookingModal('Calculadora')">
-                                    <span>Agendar Consulta con este Perfil</span>
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                                </button>
-                            </div>
-                            <button type="button" class="btn-text" onclick="prevCalcStep(1)">← Recalcular con otros datos</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Clinical Evidence & Success Transformations -->
-        <section class="section-padding" id="resultados">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Resultados Clínicos Reales</span>
-                    <h2 class="section-title">Casos de Éxito y Transformación Médica</h2>
-                    <p class="section-subtitle">Historias reales de pacientes monitoreados con telemetría médica y farmacoterapia de precisión.</p>
-                </div>
-
-                <div class="grid-cards-3">
-                    <!-- Case 1 -->
-                    <div class="patient-card glass-panel">
-                        <div class="patient-card-header">
-                            <div class="patient-avatar-box">
-                                <img src="assets/patient-maria.jpg" alt="Foto de María C. - Caso de éxito NovaMetabolic" class="patient-avatar-img" width="52" height="52">
-                                <div>
-                                    <h4 class="patient-title">María C., 42 años</h4>
-                                    <span class="patient-subtitle">Abogada · Tratamiento de 20 semanas</span>
-                                </div>
-                            </div>
-                            <span class="badge-pill bg-teal">-21.4 kg</span>
-                        </div>
-                        <div class="patient-metrics-list">
-                            <div class="p-metric">
-                                <small>Grasa Visceral</small>
-                                <strong>Nivel 14 &rarr; Nivel 6</strong>
-                            </div>
-                            <div class="p-metric">
-                                <small>Glucosa en Ayunas</small>
-                                <strong>118 &rarr; 86 mg/dL</strong>
-                            </div>
-                            <div class="p-metric">
-                                <small>Masa Muscular</small>
-                                <strong>100% Preservada</strong>
-                            </div>
-                        </div>
-                        <p class="patient-quote">
-                            "Había intentado ayunos, dietas cetogénicas y suplementos por 10 años, siempre con rebote. Con el protocolo de NovaMetabolic no solo perdí 21 kilos, sino que por primera vez en mi vida no tengo esa ansiedad constante por comer."
-                        </p>
-                        <div class="patient-badge-verified">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            <span>Caso Clínico Verificado por Bioimpedancia</span>
-                        </div>
-                    </div>
-
-                    <!-- Case 2 -->
-                    <div class="patient-card glass-panel">
-                        <div class="patient-card-header">
-                            <div class="patient-avatar-box">
-                                <img src="assets/patient-diego.jpg" alt="Foto de Diego R. - Caso de éxito NovaMetabolic" class="patient-avatar-img" width="52" height="52">
-                                <div>
-                                    <h4 class="patient-title">Diego R., 51 años</h4>
-                                    <span class="patient-subtitle">Empresario · Tratamiento de 24 semanas</span>
-                                </div>
-                            </div>
-                            <span class="badge-pill bg-indigo">-26.8 kg</span>
-                        </div>
-                        <div class="patient-metrics-list">
-                            <div class="p-metric">
-                                <small>HbA1c (Hemoglobina)</small>
-                                <strong>6.8% &rarr; 5.2%</strong>
-                            </div>
-                            <div class="p-metric">
-                                <small>Presión Arterial</small>
-                                <strong>145/95 &rarr; 118/75</strong>
-                            </div>
-                            <div class="p-metric">
-                                <small>Hígado Graso</small>
-                                <strong>Revertido</strong>
-                            </div>
-                        </div>
-                        <p class="patient-quote">
-                            "Mi médico cardiólogo me advirtió del riesgo inminente. El equipo de NovaMetabolic me guió con medicamentos modernos y monitoreo de glucosa en tiempo real. Me ahorré una cirugía bariátrica y recuperé mi energía por completo."
-                        </p>
-                        <div class="patient-badge-verified">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            <span>Caso Clínico Verificado por Bioimpedancia</span>
-                        </div>
-                    </div>
-
-                    <!-- Case 3 -->
-                    <div class="patient-card glass-panel">
-                        <div class="patient-card-header">
-                            <div class="patient-avatar-box">
-                                <img src="assets/patient-laura.jpg" alt="Foto de Laura G. - Caso de éxito NovaMetabolic" class="patient-avatar-img" width="52" height="52">
-                                <div>
-                                    <h4 class="patient-title">Laura G., 36 años</h4>
-                                    <span class="patient-subtitle">Arquitecta · Tratamiento de 16 semanas</span>
-                                </div>
-                            </div>
-                            <span class="badge-pill bg-teal">-15.2 kg</span>
-                        </div>
-                        <div class="patient-metrics-list">
-                            <div class="p-metric">
-                                <small>HOMA-IR (Insulina)</small>
-                                <strong>4.8 &rarr; 1.4</strong>
-                            </div>
-                            <div class="p-metric">
-                                <small>Calidad de Sueño</small>
-                                <strong>+65% REM/Profundo</strong>
-                            </div>
-                            <div class="p-metric">
-                                <small>Circunferencia Cintura</small>
-                                <strong>-19 cm</strong>
-                            </div>
-                        </div>
-                        <p class="patient-quote">
-                            "El soporte médico continuo marca toda la diferencia. Los efectos secundarios fueron nulos gracias a la titulación gradual y los suplementos mioactivos. Ahora me mantengo en mi peso ideal sin esfuerzo."
-                        </p>
-                        <div class="patient-badge-verified">
-                            <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                            <span>Caso Clínico Verificado por Bioimpedancia</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Medical Team & Scientific Authority -->
-        <section class="section-padding bg-slate-900/40" id="equipo">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-tag">Cuerpo Médico de Excelencia</span>
-                    <h2 class="section-title">Especialistas certificados en Medicina Metabólica y Obesidad</h2>
-                    <p class="section-subtitle">Profesionales formados en las principales sociedades médicas internacionales dedicados a tu bienestar.</p>
-                </div>
-
-                <div class="grid-cards-3">
-                    <!-- Doctor 1 -->
-                    <div class="doctor-card glass-panel text-center">
-                        <div class="doctor-img-wrapper">
-                            <div class="doctor-badge-cert">Endocrinología</div>
-                            <img src="assets/doctor-navarro.jpg" alt="Dr. Alejandro Navarro - Director Médico" class="doctor-avatar-photo" width="110" height="110">
-                        </div>
-                        <h3 class="doctor-name">Dr. Alejandro Navarro, MD</h3>
-                        <p class="doctor-role">Director Médico & Endocrinólogo Clínico</p>
-                        <p class="doctor-bio">
-                            Especialista en Medicina Interna y Endocrinología. Miembro de The Endocrine Society y especialista en farmacoterapia de la obesidad con más de 14 años de práctica clínica.
-                        </p>
-                        <div class="doctor-credentials">
-                            <span>M.N. 142.890</span> · <span>Harvard Medical School Postgrad</span>
-                        </div>
-                    </div>
-
-                    <!-- Doctor 2 -->
-                    <div class="doctor-card glass-panel text-center">
-                        <div class="doctor-img-wrapper">
-                            <div class="doctor-badge-cert">Nutrición de Precisión</div>
-                            <img src="assets/doctor-montes.jpg" alt="Dra. Valentina Montes - Jefa de Nutrición" class="doctor-avatar-photo" width="110" height="110">
-                        </div>
-                        <h3 class="doctor-name">Dra. Valentina Montes, PhD</h3>
-                        <p class="doctor-role">Jefa de Nutrición Metabólica y Longevidad</p>
-                        <p class="doctor-bio">
-                            Doctora en Ciencias de la Nutrición. Experta en prescripción nutricional personalizada para la preservación muscular durante tratamientos con agonistas GLP-1/GIP.
-                        </p>
-                        <div class="doctor-credentials">
-                            <span>M.P. 8.420</span> · <span>Sociedad Española de Obesidad (SEEDO)</span>
-                        </div>
-                    </div>
-
-                    <!-- Doctor 3 -->
-                    <div class="doctor-card glass-panel text-center">
-                        <div class="doctor-img-wrapper">
-                            <div class="doctor-badge-cert">Medicina del Comportamiento</div>
-                            <img src="assets/doctor-benitez.jpg" alt="Dr. Martín Benítez - Medicina del Estilo de Vida" class="doctor-avatar-photo" width="110" height="110">
-                        </div>
-                        <h3 class="doctor-name">Dr. Martín Benítez, MD</h3>
-                        <p class="doctor-role">Especialista en Medicina del Estilo de Vida</p>
-                        <p class="doctor-bio">
-                            Especialista en cronobiología, higiene del sueño y modulación del eje intestino-cerebro para la fijación a largo plazo de los resultados metabólicos.
-                        </p>
-                        <div class="doctor-credentials">
-                            <span>M.N. 165.312</span> · <span>American College of Lifestyle Medicine</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Clinic Guarantee Banner -->
-                <div class="clinic-guarantee-banner glass-panel mt-12">
-                    <div class="guarantee-icon">🛡️</div>
-                    <div class="guarantee-text">
-                        <h3>Seguridad y Ética Médica Garantizada</h3>
-                        <p>Todos nuestros tratamientos farmacológicos están aprobados por autoridades regulatorias sanitarias (FDA, EMA, ANMAT/COFEPRIS). No utilizamos suplementos mágicos ni fórmulas magistrales no estandarizadas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Accordion -->
-        <section class="section-padding" id="faq">
-            <div class="container max-w-4xl">
-                <div class="section-header text-center">
-                    <span class="section-tag">Claridad y Confianza</span>
-                    <h2 class="section-title">Preguntas Frecuentes sobre el Tratamiento</h2>
-                    <p class="section-subtitle">Todo lo que necesitas saber antes de iniciar tu proceso médico.</p>
-                </div>
-
-                <div class="accordion" id="faqAccordion">
-                    <!-- FAQ 1 -->
-                    <div class="accordion-item glass-panel">
-                        <button class="accordion-header" aria-expanded="false" onclick="toggleFaq(this)">
-                            <span>¿Cómo funcionan exactamente los medicamentos duales GLP-1 / GIP?</span>
-                            <span class="acc-icon">+</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-inner">
-                                <p>
-                                    Son moléculas terapéuticas que imitan a las hormonas incretinas naturales que tu propio cuerpo produce en el intestino tras comer. Actúan a tres niveles:
-                                </p>
-                                <ul>
-                                    <li><strong>A nivel cerebral:</strong> Silencian los centros de hambre compulsiva y pensamientos continuos sobre comida ("food noise").</li>
-                                    <li><strong>A nivel gástrico:</strong> Ralentizan suavemente el vaciado estomacal, prolongando la sensación de saciedad con porciones moderadas.</li>
-                                    <li><strong>A nivel metabólico:</strong> Mejoran drásticamente la captación de glucosa por las células musculares y facilitan la lipólisis (quema de grasa).</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 2 -->
-                    <div class="accordion-item glass-panel">
-                        <button class="accordion-header" aria-expanded="false" onclick="toggleFaq(this)">
-                            <span>¿Existe riesgo de efecto rebote al terminar el tratamiento?</span>
-                            <span class="acc-icon">+</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-inner">
-                                <p>
-                                    El efecto rebote tradicional ocurre en las dietas hipocalóricas severas porque el metabolismo se ralentiza y se pierde masa muscular. En <strong>NovaMetabolic™</strong> prevenimos esto mediante tres estrategias:
-                                </p>
-                                <ol>
-                                    <li>Preservación estricta de tu masa muscular mediante bioimpedancia continua y nutrición hiperproteica funcional.</li>
-                                    <li>Retirada progresiva (tapering) de la medicación cuando el cuerpo ha reajustado su "set-point" de peso biológico.</li>
-                                    <li>Reprogramación del estilo de vida con nuestro equipo multidisciplinar.</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 3 -->
-                    <div class="accordion-item glass-panel">
-                        <button class="accordion-header" aria-expanded="false" onclick="toggleFaq(this)">
-                            <span>¿El tratamiento está disponible en modalidad Telemedicina / Online?</span>
-                            <span class="acc-icon">+</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-inner">
-                                <p>
-                                    <strong>Sí.</strong> Contamos con una plataforma de Telemedicina de Alta Fidelidad. Te enviamos las órdenes de laboratorio digitalizadas para que te realices los análisis en tu centro de preferencia, realizamos las videoconsultas médicas especializadas y coordinamos la entrega de sensores biométricos a tu domicilio.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 4 -->
-                    <div class="accordion-item glass-panel">
-                        <button class="accordion-header" aria-expanded="false" onclick="toggleFaq(this)">
-                            <span>¿Cuáles son los posibles efectos secundarios y cómo se controlan?</span>
-                            <span class="acc-icon">+</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-inner">
-                                <p>
-                                    Los efectos secundarios más comunes son gastrointestinales leves (náuseas leves o cambios en el tránsito intestinal) al iniciar o cambiar de dosis. En nuestro protocolo utilizamos un <strong>esquema de micro-titulación gradual</strong> y pautas de hidratación y modulación gástrica que reducen la incidencia de efectos secundarios a menos del 4% en nuestros pacientes.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 5 -->
-                    <div class="accordion-item glass-panel">
-                        <button class="accordion-header" aria-expanded="false" onclick="toggleFaq(this)">
-                            <span>¿Cuánto tiempo dura el tratamiento completo?</span>
-                            <span class="acc-icon">+</span>
-                        </button>
-                        <div class="accordion-content">
-                            <div class="accordion-inner">
-                                <p>
-                                    El tiempo se personaliza según tu objetivo de pérdida de peso y perfil metabólico. En promedio, los protocolos de inducción y reducción activa duran entre 16 y 28 semanas, seguidos por una fase de consolidación de 8 a 12 semanas para fijar los resultados de forma permanente.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Final Conversion CTA Section -->
-        <section class="section-padding relative overflow-hidden">
-            <div class="cta-glow-backdrop"></div>
-            <div class="container">
-                <div class="cta-final-card glass-panel text-center">
-                    <span class="inline-badge mb-4">Agenda Abierta para Nuevos Pacientes</span>
-                    <h2 class="cta-final-title">Tu salud y bienestar merecen ciencia de vanguardia</h2>
-                    <p class="cta-final-desc">
-                        No sigas postergando tu bienestar con métodos que no atacan la causa biológica de la obesidad. Da el primer paso hacia una transformación metabólica definitiva y supervisada por especialistas.
-                    </p>
-                    <div class="cta-final-actions">
-                        <button class="btn btn-primary btn-xl shadow-glow" onclick="openBookingModal('Final CTA')">
-                            <span>Agendar Mi Consulta de Valoración</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </button>
-                        <a href="https://wa.me/5491100000000?text=Hola,%20deseo%20hacer%20una%20consulta%20directa%20sobre%20el%20tratamiento%20metab%C3%B3lico" target="_blank" rel="noopener" class="btn btn-outline btn-xl">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                            <span>Escribir por WhatsApp</span>
-                        </a>
-                    </div>
-                    <div class="guarantee-micro">
-                        <span>🔒 Confidencialidad Médica Absoluta</span> · 
-                        <span>⚡ Respuesta en menos de 2 horas hábiles</span> · 
-                        <span>📋 Evaluación sin compromiso</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Modal de Agendamiento -->
-    <div class="modal-backdrop" id="bookingModal">
-        <div class="modal-dialog glass-panel">
-            <button class="modal-close" onclick="closeBookingModal()" aria-label="Cerrar ventana">&times;</button>
-            <div class="modal-header">
-                <div class="modal-badge">CONSULTA DIAGNÓSTICA</div>
-                <h3 class="modal-title">Agendar Valoración Médica</h3>
-                <p class="modal-subtitle">Selecciona tu modalidad preferida y nuestro equipo coordinará tu cita con el especialista.</p>
-            </div>
-
-            <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
-                <div class="modal-body">
-                    <div class="form-group mb-4">
-                        <label>Modalidad de Consulta *</label>
-                        <div class="modal-mode-selector">
-                            <label class="mode-pill active">
-                                <input type="radio" name="modality" value="Presencial" checked>
-                                <span>🏥 Presencial en Clínica</span>
-                            </label>
-                            <label class="mode-pill">
-                                <input type="radio" name="modality" value="Telemedicina">
-                                <span>💻 Telemedicina HD</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-grid-2">
-                        <div class="form-group">
-                            <label for="bName">Nombre y Apellido *</label>
-                            <input type="text" id="bName" class="form-control" required placeholder="Ej. Ana Pérez">
-                        </div>
-                        <div class="form-group">
-                            <label for="bPhone">WhatsApp / Teléfono *</label>
-                            <input type="tel" id="bPhone" class="form-control" required placeholder="Ej. +54 9 11 1234-5678">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="bEmail">Correo Electrónico *</label>
-                        <input type="email" id="bEmail" class="form-control" required placeholder="Ej. ana.perez@email.com">
-                    </div>
-
-                    <div class="form-grid-2">
-                        <div class="form-group">
-                            <label for="bDate">Fecha Tentativa *</label>
-                            <input type="date" id="bDate" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="bTime">Preferencia Horaria</label>
-                            <select id="bTime" class="form-control">
-                                <option value="Mañana (09:00 - 13:00)">Mañana (09:00 - 13:00)</option>
-                                <option value="Tarde (14:00 - 19:00)">Tarde (14:00 - 19:00)</option>
-                                <option value="Indiferente">Indiferente</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="bNotes">Motivo u objetivo principal (opcional)</label>
-                        <textarea id="bNotes" class="form-control" rows="2" placeholder="Ej. Deseo evaluar tratamiento GLP-1 para perder 15 kg y controlar glucosa..."></textarea>
-                    </div>
-
-                    <div class="consent-check">
-                        <input type="checkbox" id="bConsent" required checked>
-                        <label for="bConsent">Acepto la política de privacidad y el contacto por parte del equipo médico de NovaMetabolic™.</label>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline" onclick="closeBookingModal()">Cancelar</button>
-                    <button type="submit" class="btn btn-primary shadow-glow">
-                        <span>Confirmar Solicitud de Cita</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </button>
-                </div>
-            </form>
+        <div class="doctor-meta">
+          <div class="name">Dra. Valentina Montes</div>
+          <div class="role">Directora Médica & Endocrinóloga (MN 142.890)</div>
         </div>
+        <button class="search-btn" onclick="openBookingModal('DoctorCard')" aria-label="Consultar con Dra. Montes">
+          <i class="ph ph-calendar-plus"></i>
+        </button>
+      </div>
+
+      <div class="info-grid">
+        <div class="clay-card info-card">
+          <span class="ic-head">
+            <i class="ph ph-chart-line-up"></i>
+            Telemetría CGM
+          </span>
+          <p>Curva glucémica continua y detección en vivo de picos insulinémicos.</p>
+        </div>
+        <div class="clay-card info-card">
+          <span class="ic-head">
+            <i class="ph ph-scales"></i>
+            Bioimpedancia 8P
+          </span>
+          <p>Mapeo segmental de grasa visceral y preservación de masa muscular magra.</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Success Feedback Toast -->
-    <div class="toast-notification" id="toastNotification">
-        <div class="toast-icon">✅</div>
-        <div class="toast-content">
-            <strong id="toastTitle">Solicitud Recibida</strong>
-            <p id="toastMessage">Un asesor médico se comunicará contigo vía WhatsApp en breve.</p>
+    <div class="treatments reveal">
+      <article class="clay-card treatment">
+        <div class="head">
+          <span class="icon" aria-hidden="true">
+            <i class="ph ph-dna"></i>
+          </span>
+          <h3>Agonistas Duales GLP-1 / GIP</h3>
+          <button class="menu-dots" aria-label="Más info" onclick="openBookingModal('GLP1')">
+            <i class="ph ph-dots-three-outline"></i>
+          </button>
         </div>
+        <p>Potenciación de la señal de saciedad hipotalámica y optimización de la sensibilidad a la insulina para una pérdida de peso sostenible.</p>
+        <div class="tag-row">
+          <span class="tag"><i class="ph ph-check"></i> Farmacoterapia Aprobada</span>
+          <span class="tag"><i class="ph ph-shield-check"></i> Sin Efecto Rebote</span>
+        </div>
+      </article>
+
+      <article class="clay-card treatment">
+        <div class="head">
+          <span class="icon" aria-hidden="true">
+            <i class="ph ph-arrows-clockwise"></i>
+          </span>
+          <h3>Reprogramación del Set-Point</h3>
+          <button class="menu-dots" aria-label="Más info" onclick="openBookingModal('SetPoint')">
+            <i class="ph ph-dots-three-outline"></i>
+          </button>
+        </div>
+        <p>Ajuste biológico del punto de equilibrio ponderal para evitar que el metabolismo ralentice el gasto calórico basal.</p>
+        <div class="tag-row">
+          <span class="tag"><i class="ph ph-user"></i> Medicina Individualizada</span>
+          <span class="tag"><i class="ph ph-heartbeat"></i> Salud Cardiometabólica</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ─── SECCIÓN: PILARES DE INNOVACIÓN ─── -->
+  <section class="section-block reveal" id="innovacion">
+    <div class="section-header text-center">
+      <span class="eyebrow">Ciencia & Precisión</span>
+      <h2 class="section-title">Pilares de Innovación Médica</h2>
+      <p class="section-subtitle">No tratamos el sobrepeso con fuerza de voluntad, sino como una desregulación neuroendocrina compleja.</p>
     </div>
 
-    <!-- Floating WhatsApp Action Button -->
-    <aside class="floating-contact">
-        <a href="https://wa.me/5491100000000?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20el%20tratamiento%20m%C3%A9dico%20de%20NovaMetabolic" target="_blank" rel="noopener" class="whatsapp-btn" aria-label="Escribir por WhatsApp">
-            <div class="wa-tooltip">¿Consultas rápidas? Chatea con nosotros</div>
-            <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-        </a>
-    </aside>
+    <div class="grid-4">
+      <div class="clay-card feature-box">
+        <div class="feature-icon"><i class="ph ph-pill"></i></div>
+        <h3>Farmacoterapia Dual GLP-1/GIP</h3>
+        <p>Moléculas de última generación que mimetizan incretinas naturales, reduciendo el ruido mental con la comida y prolongando la saciedad.</p>
+        <span class="feature-badge">Eficacia Clínica</span>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <div class="brand-logo mb-4">
-                    <div class="logo-icon">
-                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <circle cx="16" cy="16" r="14" stroke="#00E5BE" stroke-width="2.5" opacity="0.4"/>
-                            <path d="M16 6V26M6 16H26" stroke="#00E5BE" stroke-width="3" stroke-linecap="round"/>
-                            <circle cx="16" cy="16" r="4" fill="#00E5BE"/>
-                        </svg>
-                    </div>
-                    <span class="brand-name">Nova<span class="text-gradient">Metabolic</span></span>
-                </div>
-                <p class="footer-desc">
-                    Clínica médica de alta complejidad especializada en medicina de precisión, endocrinología avanzada y tratamiento integral de la obesidad y trastornos metabólicos.
-                </p>
-                <div class="footer-cert-badges">
-                    <span>🏛️ Centro Autorizado de Salud</span>
-                    <span>🏅 Miembro Sociedad de Endocrinología</span>
-                </div>
-            </div>
+      <div class="clay-card feature-box">
+        <div class="feature-icon"><i class="ph ph-activity"></i></div>
+        <h3>Monitoreo Glucémico Continuo</h3>
+        <p>Sensores CGM que transmiten lecturas minuto a minuto para ajustar el plan nutricional según tu respuesta glucémica individual.</p>
+        <span class="feature-badge">Telemetría 24/7</span>
+      </div>
 
-            <div class="footer-col">
-                <h4 class="footer-title">Navegación</h4>
-                <ul class="footer-links">
-                    <li><a href="#innovacion">Tratamientos GLP-1 / GIP</a></li>
-                    <li><a href="#metodo">Protocolo 360°</a></li>
-                    <li><a href="#calculadora">Calculadora Metabólica</a></li>
-                    <li><a href="#resultados">Casos Clínicos</a></li>
-                    <li><a href="#equipo">Equipo Médico</a></li>
-                    <li><a href="#faq">Preguntas Frecuentes</a></li>
-                </ul>
-            </div>
+      <div class="clay-card feature-box">
+        <div class="feature-icon"><i class="ph ph-person-simple-walk"></i></div>
+        <h3>Preservación de Masa Magra</h3>
+        <p>Protocolos diseñados para maximizar la oxidación de grasa visceral protegiendo el tejido muscular mediante bioimpedancia médica.</p>
+        <span class="feature-badge">Composición Corporal</span>
+      </div>
 
-            <div class="footer-col">
-                <h4 class="footer-title">Sedes & Atención</h4>
-                <ul class="footer-contact">
-                    <li>
-                        <strong>Sede Central Médica:</strong>
-                        <span>Av. del Libertador 4850, Piso 8, Ciudad Autónoma de Buenos Aires</span>
-                    </li>
-                    <li>
-                        <strong>Telemedicina:</strong>
-                        <span>Atención nacional e internacional vía portal seguro</span>
-                    </li>
-                    <li>
-                        <strong>Horarios:</strong>
-                        <span>Lunes a Viernes 08:00 - 20:00 | Sábados 09:00 - 14:00</span>
-                    </li>
-                    <li>
-                        <strong>Contacto:</strong>
-                        <span>contacto@novametabolic.med · Tel: (011) 5238-9000</span>
-                    </li>
-                </ul>
+      <div class="clay-card feature-box">
+        <div class="feature-icon"><i class="ph ph-brain"></i></div>
+        <h3>Reseteo Neuro-Metabólico</h3>
+        <p>Fase de estabilización progresiva que consolida el nuevo peso como el punto de ajuste biológico definitivo del organismo.</p>
+        <span class="feature-badge">Cero Rebote</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECCIÓN: MÉTODO 360° ─── -->
+  <section class="section-block reveal" id="metodo">
+    <div class="section-header">
+      <span class="eyebrow">Acompañamiento Integral</span>
+      <h2 class="section-title">El Método NovaMetabolic 360°</h2>
+      <p class="section-subtitle">Un recorrido estructurado en 4 fases clínicas guiadas por médicos especialistas, nutricionistas y telemedicina.</p>
+    </div>
+
+    <div class="timeline-grid">
+      <div class="clay-card timeline-card">
+        <div class="phase-number">Fase 01</div>
+        <h3>Evaluación Diagnóstica Completa</h3>
+        <p>Perfil hormonal completo, curva de insulina, panel de lípidos avanzados, bioimpedancia de 8 puntos y análisis genético metabólico.</p>
+        <ul class="phase-list">
+          <li><i class="ph-fill ph-check-circle"></i> Laboratorio de alta complejidad</li>
+          <li><i class="ph-fill ph-check-circle"></i> Historia clínica y antecedentes</li>
+        </ul>
+      </div>
+
+      <div class="clay-card timeline-card">
+        <div class="phase-number">Fase 02</div>
+        <h3>Inducción & Farmacoterapia</h3>
+        <p>Inicio del protocolo con agonistas GLP-1/GIP con titulación gradual de dosis para garantizar tolerancia digestiva absoluta y saciedad.</p>
+        <ul class="phase-list">
+          <li><i class="ph-fill ph-check-circle"></i> Titulación de dosis médica</li>
+          <li><i class="ph-fill ph-check-circle"></i> Sensor de glucosa CGM colocado</li>
+        </ul>
+      </div>
+
+      <div class="clay-card timeline-card">
+        <div class="phase-number">Fase 03</div>
+        <h3>Optimización Nutricional & Fuerza</h3>
+        <p>Planes de alimentación antiinflamatoria sin restricciones extremas y prescripción de entrenamiento para proteger la masa magra.</p>
+        <ul class="phase-list">
+          <li><i class="ph-fill ph-check-circle"></i> Consulta quincenal con especialista</li>
+          <li><i class="ph-fill ph-check-circle"></i> Ajuste en vivo por telemetría</li>
+        </ul>
+      </div>
+
+      <div class="clay-card timeline-card">
+        <div class="phase-number">Fase 04</div>
+        <h3>Consolidación del Set-Point</h3>
+        <p>Desescalamiento farmacológico programado y estabilización hormonal para que tu organismo reconozca tu nuevo peso como natural.</p>
+        <ul class="phase-list">
+          <li><i class="ph-fill ph-check-circle"></i> Mantenimiento a largo plazo</li>
+          <li><i class="ph-fill ph-check-circle"></i> Seguimiento preventivo trimestral</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECCIÓN: CALCULADORA DE SALUD METABÓLICA ─── -->
+  <section class="section-block reveal" id="calculadora">
+    <div class="calc-wrapper clay-card">
+      <div class="calc-header text-center">
+        <span class="eyebrow">Diagnóstico Clínico Gratuito</span>
+        <h2 class="section-title">Calculadora de Salud Metabólica</h2>
+        <p class="section-subtitle">Evalúa tu perfil metabólico en 3 minutos y conoce tu proyección de reducción de peso personalizada.</p>
+        
+        <!-- Step Indicators -->
+        <div class="calc-steps-indicator">
+          <div class="step-dot active" id="dot1"><span>1</span> Biometría</div>
+          <div class="step-divider"></div>
+          <div class="step-dot" id="dot2"><span>2</span> Historial</div>
+          <div class="step-divider"></div>
+          <div class="step-dot" id="dot3"><span>3</span> Síntomas</div>
+          <div class="step-divider"></div>
+          <div class="step-dot" id="dot4"><span>4</span> Diagnóstico</div>
+        </div>
+      </div>
+
+      <!-- Step 1: Biometrics -->
+      <div class="calc-step-panel active" id="calcStep1">
+        <div class="calc-grid">
+          <div class="input-group">
+            <label>Género Biológico</label>
+            <div class="segmented-control">
+              <label class="seg-btn active">
+                <input type="radio" name="gender" value="f" checked onchange="updateGender(this)">
+                <span>Femenino</span>
+              </label>
+              <label class="seg-btn">
+                <input type="radio" name="gender" value="m" onchange="updateGender(this)">
+                <span>Masculino</span>
+              </label>
             </div>
+          </div>
+
+          <div class="input-group">
+            <label for="cAge">Edad (años)</label>
+            <input type="number" id="cAge" class="clay-input" value="38" min="18" max="85">
+          </div>
+
+          <div class="input-group">
+            <label for="cHeight">Altura (cm)</label>
+            <input type="number" id="cHeight" class="clay-input" value="168" min="120" max="230" oninput="calculateLiveBMI()">
+          </div>
+
+          <div class="input-group">
+            <label for="cWeight">Peso Actual (kg)</label>
+            <input type="number" id="cWeight" class="clay-input" value="89" min="40" max="250" oninput="calculateLiveBMI()">
+          </div>
         </div>
 
-        <div class="container footer-bottom">
-            <div class="disclaimer-text">
-                <p>
-                    <strong>Aviso Médico Legal:</strong> La información provista en este sitio web tiene carácter informativo y divulgativo. Los tratamientos farmacológicos y protocolos médicos están sujetos a valoración diagnóstica individualizada y prescripción por parte de un profesional médico matriculado tras la realización de los estudios clínicos pertinentes.
-                </p>
-            </div>
-            <div class="footer-rights">
-                <p>&copy; 2026 NovaMetabolic™ Precision Medicine Clinic. Todos los derechos reservados.</p>
-                <div class="footer-legal-links">
-                    <a href="#">Términos y Condiciones</a>
-                    <a href="#">Política de Privacidad Médica</a>
-                    <a href="#">Consentimiento Informado</a>
-                </div>
-            </div>
+        <div class="live-bmi-box">
+          <span>IMC Estimado: <strong id="liveBMIVal">31.5</strong> (<span id="liveBMILabel">Obesidad Grado I</span>)</span>
         </div>
-    </footer>
 
-    <!-- Custom Script -->
-    <script src="app.js"></script>
+        <div class="calc-actions">
+          <div></div>
+          <button class="header-cta" onclick="nextCalcStep(2)">
+            <span class="cta-text">Siguiente: Historial de Peso</span>
+            <span class="cta-dot"><i class="ph ph-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 2: History & Goals -->
+      <div class="calc-step-panel" id="calcStep2">
+        <div class="calc-grid">
+          <div class="input-group">
+            <label for="cGoalWeight">Peso Objetivo Deseado (kg)</label>
+            <input type="number" id="cGoalWeight" class="clay-input" value="70" min="40" max="200">
+          </div>
+
+          <div class="input-group">
+            <label for="cYearsStruggling">Años intentando perder peso</label>
+            <select id="cYearsStruggling" class="clay-input">
+              <option value="1">Menos de 2 años</option>
+              <option value="3" selected>2 a 5 años</option>
+              <option value="6">Más de 5 años</option>
+              <option value="10">Toda la vida</option>
+            </select>
+          </div>
+
+          <div class="input-group full-width">
+            <label>¿Has experimentado el efecto rebote con dietas previas?</label>
+            <div class="segmented-control">
+              <label class="seg-btn active">
+                <input type="radio" name="rebound" value="yes" checked>
+                <span>Sí, recuperé el peso o más</span>
+              </label>
+              <label class="seg-btn">
+                <input type="radio" name="rebound" value="no">
+                <span>No / Es mi primer intento</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-actions">
+          <button class="btn-ghost" onclick="nextCalcStep(1)">
+            <i class="ph ph-arrow-left"></i> Volver
+          </button>
+          <button class="header-cta" onclick="nextCalcStep(3)">
+            <span class="cta-text">Siguiente: Síntomas Metabólicos</span>
+            <span class="cta-dot"><i class="ph ph-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 3: Symptoms -->
+      <div class="calc-step-panel" id="calcStep3">
+        <label class="group-label">Marca los síntomas que experimentas frecuentemente:</label>
+        <div class="symptoms-grid">
+          <label class="symptom-card">
+            <input type="checkbox" name="symptom" value="cravings" checked>
+            <div class="symp-box">
+              <i class="ph ph-cookie"></i>
+              <strong>Ansiedad por dulces / picoteo vespertino</strong>
+              <p>Deseos intensos de carbohidratos por la tarde o noche.</p>
+            </div>
+          </label>
+
+          <label class="symptom-card">
+            <input type="checkbox" name="symptom" value="fatigue" checked>
+            <div class="symp-box">
+              <i class="ph ph-battery-warning"></i>
+              <strong>Fatiga o somnolencia postprandial</strong>
+              <p>Bajón marcado de energía 30-60 min después de comer.</p>
+            </div>
+          </label>
+
+          <label class="symptom-card">
+            <input type="checkbox" name="symptom" value="satiety">
+            <div class="symp-box">
+              <i class="ph ph-fork-knife"></i>
+              <strong>Dificultad para sentir saciedad</strong>
+              <p>Sensación de hambre poco tiempo después de una comida completa.</p>
+            </div>
+          </label>
+
+          <label class="symptom-card">
+            <input type="checkbox" name="symptom" value="waist" checked>
+            <div class="symp-box">
+              <i class="ph ph-gauge"></i>
+              <strong>Grasa abdominal predominante</strong>
+              <p>Dificultad específica para reducir perímetro de cintura.</p>
+            </div>
+          </label>
+        </div>
+
+        <div class="calc-actions">
+          <button class="btn-ghost" onclick="nextCalcStep(2)">
+            <i class="ph ph-arrow-left"></i> Volver
+          </button>
+          <button class="header-cta" onclick="processCalcResults()">
+            <span class="cta-text">Generar Diagnóstico Personalizado</span>
+            <span class="cta-dot"><i class="ph ph-sparkle"></i></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Step 4: Results & Medical Prescription -->
+      <div class="calc-step-panel" id="calcStep4">
+        <div class="results-grid">
+          <div class="res-summary-card clay-card">
+            <div class="res-stat">
+              <span class="res-stat-label">IMC Calculado</span>
+              <div class="res-stat-value" id="resBMI">31.5</div>
+              <span class="tag" id="resBMILabel">Obesidad Grado I</span>
+            </div>
+            <div class="res-stat">
+              <span class="res-stat-label">Pérdida Estimada</span>
+              <div class="res-stat-value text-accent" id="resWeightLoss">-19 kg</div>
+              <span class="tag">En 24 semanas</span>
+            </div>
+            <div class="res-stat">
+              <span class="res-stat-label">Tasa de Éxito Clínico</span>
+              <div class="res-stat-value" id="resSuccessRate">96.8%</div>
+              <span class="tag">Protocolo Dual</span>
+            </div>
+          </div>
+
+          <div class="res-rec-card clay-card">
+            <div class="rec-badge"><i class="ph ph-stethoscope"></i> Recomendación Médica NovaMetabolic™</div>
+            <p id="resRecommendationText">
+              Con un IMC de <strong>31.5</strong> y presencia de resistencia biológica, tu perfil califica de manera prioritaria para nuestro <strong>Protocolo Farmacológico Dual GLP-1/GIP</strong> con telemetría continua y reseteo del set-point.
+            </p>
+            <div class="calc-cta-row">
+              <button class="header-cta" onclick="openBookingModal('Calculadora')">
+                <span class="cta-text">Agendar Consulta con este Diagnóstico</span>
+                <span class="cta-dot"><i class="ph ph-calendar-check"></i></span>
+              </button>
+              <button class="btn-ghost" onclick="nextCalcStep(1)">Recalcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── SECCIÓN: CASOS CLÍNICOS / TESTIMONIOS ─── -->
+  <section class="section-block reveal" id="casos">
+    <div class="section-header">
+      <span class="eyebrow">Biomarcadores Verificados</span>
+      <h2 class="section-title">Resultados Médicos Reales</h2>
+      <p class="section-subtitle">Casos clínicos documentados con evolución de masa magra, glucosa y reducción de grasa visceral.</p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Paciente 1: Laura -->
+      <article class="clay-card patient-card">
+        <div class="patient-header">
+          <img src="assets/patient-laura.jpg" alt="Laura M." class="patient-photo">
+          <div>
+            <h3>Laura M. (42 años)</h3>
+            <span class="patient-tag">Tratamiento 24 semanas</span>
+          </div>
+          <div class="patient-loss">-22 kg</div>
+        </div>
+        <p class="patient-quote">"Llevaba 8 años luchando con dietas y efecto rebote. Con el protocolo GLP-1 y el monitoreo médico no solo alcancé mi peso, sino que mi glucosa volvió a la normalidad."</p>
+        <div class="biomarkers-grid">
+          <div class="bio-item">
+            <span class="b-lbl">Glucosa en Ayunas</span>
+            <span class="b-val">118 → <strong>84 mg/dL</strong></span>
+          </div>
+          <div class="bio-item">
+            <span class="b-lbl">HbA1c</span>
+            <span class="b-val">6.2% → <strong>5.1%</strong></span>
+          </div>
+          <div class="bio-item">
+            <span class="b-lbl">Grasa Visceral</span>
+            <span class="b-val">Nivel 14 → <strong>Nivel 5</strong></span>
+          </div>
+          <div class="bio-item">
+            <span class="b-lbl">Masa Muscular</span>
+            <span class="b-val"><strong>98.2%</strong> Preservada</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Paciente 2: Diego -->
+      <article class="clay-card patient-card">
+        <div class="patient-header">
+          <img src="assets/patient-diego.jpg" alt="Diego R." class="patient-photo">
+          <div>
+            <h3>Diego R. (49 años)</h3>
+            <span class="patient-tag">Tratamiento 20 semanas</span>
+          </div>
+          <div class="patient-loss">-18.5 kg</div>
+        </div>
+        <p class="patient-quote">"Mi médico me alertó sobre hígado graso y prediabetes. El seguimiento con sensores y la atención por telemedicina hicieron que el proceso fuera natural y sin ansiedad."</p>
+        <div class="biomarkers-grid">
+          <div class="bio-item">
+            <span class="b-lbl">Triglicéridos</span>
+            <span class="b-val">240 → <strong>110 mg/dL</strong></span>
+          </div>
+          <div class="bio-item">
+            <span class="b-lbl">Presión Arterial</span>
+            <span class="b-val">140/90 → <strong>115/75</strong></span>
+          </div>
+          <div class="bio-item">
+            <span class="b-lbl">Perímetro Abdominal</span>
+            <span class="b-val">108 cm → <strong>89 cm</strong></span>
+          </div>
+          <div class="bio-item">
+            <span class="b-lbl">Hígado Graso</span>
+            <span class="b-val">Grado II → <strong>Normalizado</strong></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Paciente 3: María -->
+      <article class="clay-card patient-card">
+        <div class="patient-header">
+          <img src="assets/patient-maria.jpg" alt="María S." class="patient-photo">
+          <div>
+            <h3>María S. (36 años)</h3>
+            <span class="patient-tag">Tratamiento 28 semanas</span>
+          </div>
+          <div class="patient-loss">-26 kg</div>
+        </div>
+        <p class="patient-quote">"Padezco hipotiroidismo y siempre me dijeron que bajar de peso sería imposible. NovaMetabolic cambió por completo mi metabolismo y mi calidad de vida."</p>
+        <div class="biomarkers-grid">
+          <div class="bio-item">
+            <span class="b-lbl">Grasa Corporal</span>
+            <span class="b-val">42% → <strong>25.4%</strong></span>
+          </div>
+          <div class="bio-item">
+            <span class="b-lbl">Colesterol LDL</span>
+            <span class="b-val">165 → <strong>98 mg/dL</strong></span>
+          </div>
+          <div class="bio-item">
+            <span class="b-lbl">Insulina Basal</span>
+            <span class="b-val">22 → <strong>6.8 μUI/mL</strong></span>
+          </div>
+          <div class="bio-item">
+            <span class="b-lbl">Efecto Rebote</span>
+            <span class="b-val"><strong>0 kg</strong> (12 meses)</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ─── SECCIÓN: EQUIPO MÉDICO DE ESPECIALISTAS ─── -->
+  <section class="section-block reveal" id="equipo">
+    <div class="section-header">
+      <span class="eyebrow">Dirección Médica</span>
+      <h2 class="section-title">Especialistas en Endocrinología & Metabolismo</h2>
+      <p class="section-subtitle">Profesionales de primer nivel con formación internacional en centros de referencia.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="clay-card doctor-full-card">
+        <div class="doc-img-wrap">
+          <img src="assets/doctor-montes.jpg" alt="Dra. Valentina Montes">
+          <span class="doc-badge">Directora Médica</span>
+        </div>
+        <h3>Dra. Valentina Montes</h3>
+        <p class="doc-spec">Especialista en Endocrinología Metabólica & Obesidad</p>
+        <p class="doc-desc">Ex-fellow en Medicina Metabólica (Harvard Medical School). Miembro titular de la Sociedad Argentina de Endocrinología y Metabolismo (SAEM). MN 142.890.</p>
+        <button class="btn-ghost" onclick="openBookingModal('Dra. Montes')">
+          <i class="ph ph-calendar-plus"></i> Agendar con Dra. Montes
+        </button>
+      </div>
+
+      <div class="clay-card doctor-full-card">
+        <div class="doc-img-wrap">
+          <img src="assets/doctor-benitez.jpg" alt="Dr. Esteban Benítez">
+          <span class="doc-badge">Nutrición de Precisión</span>
+        </div>
+        <h3>Dr. Esteban Benítez</h3>
+        <p class="doc-spec">Médico Internista & Especialista en Nutrición Clínica</p>
+        <p class="doc-desc">Experto en modulación farmacológica del apetito, bioimpedancia clínica segmental y prescripción de ejercicio metabólico. MN 138.420.</p>
+        <button class="btn-ghost" onclick="openBookingModal('Dr. Benítez')">
+          <i class="ph ph-calendar-plus"></i> Agendar con Dr. Benítez
+        </button>
+      </div>
+
+      <div class="clay-card doctor-full-card">
+        <div class="doc-img-wrap">
+          <img src="assets/doctor-navarro.jpg" alt="Dra. Lucía Navarro">
+          <span class="doc-badge">Cardiometabolismo</span>
+        </div>
+        <h3>Dra. Lucía Navarro</h3>
+        <p class="doc-spec">Cardióloga & Especialista en Riesgo Cardiometabólico</p>
+        <p class="doc-desc">Enfocada en prevención de eventos cardiovasculares, optimización lipídica avanzada y telemetría continua de parámetros vitales. MN 156.310.</p>
+        <button class="btn-ghost" onclick="openBookingModal('Dra. Navarro')">
+          <i class="ph ph-calendar-plus"></i> Agendar con Dra. Navarro
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECCIÓN: PREGUNTAS FRECUENTES (FAQ) ─── -->
+  <section class="section-block reveal" id="faq">
+    <div class="section-header text-center">
+      <span class="eyebrow">Resolución de Dudas</span>
+      <h2 class="section-title">Preguntas Frecuentes</h2>
+      <p class="section-subtitle">Todo lo que necesitas saber antes de iniciar tu tratamiento médico.</p>
+    </div>
+
+    <div class="faq-container">
+      <div class="clay-card faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>¿En qué se diferencia este protocolo de una dieta tradicional?</span>
+          <i class="ph ph-caret-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Las dietas restrictivas reducen el metabolismo basal y aumentan las hormonas del hambre (grelina), provocando inevitablemente el efecto rebote. Nuestro protocolo utiliza farmacoterapia dual GLP-1/GIP aprobada para regular biológicamente el centro del apetito en el hipotálamo, permitiendo perder grasa mientras preservamos masa muscular y reprogramamos el set-point metabólico.</p>
+        </div>
+      </div>
+
+      <div class="clay-card faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>¿Qué son los agonistas duales GLP-1/GIP y cómo funcionan?</span>
+          <i class="ph ph-caret-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Son moléculas análogas a hormonas intestinales que tu cuerpo produce de forma natural. Estimulan la sensación de saciedad tras comer porciones moderadas, enlentecen el vaciado gástrico y optimizan la secreción de insulina según los niveles de glucosa, eliminando la ansiedad compulsiva por la comida.</p>
+        </div>
+      </div>
+
+      <div class="clay-card faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>¿Existe el efecto rebote tras finalizar el tratamiento?</span>
+          <i class="ph ph-caret-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>No, gracias a nuestra Fase 4 de Consolidación. El tratamiento no se interrumpe de forma abrupta; se realiza una reducción gradual y planificada de la dosis mientras se afianzan los nuevos hábitos nutricionales y el organismo reconoce el nuevo peso como su nuevo set-point natural.</p>
+        </div>
+      </div>
+
+      <div class="clay-card faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>¿Puedo realizar el tratamiento de manera 100% online?</span>
+          <i class="ph ph-caret-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Sí. Contamos con una plataforma médica de Telemedicina de alta seguridad. Puedes enviar tus estudios clínicos, recibir la orden médica digital con firma electrónica y realizar las videoconsultas periódicas desde cualquier punto del país.</p>
+        </div>
+      </div>
+
+      <div class="clay-card faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>¿Cuáles son los requisitos para ser apto para el protocolo?</span>
+          <i class="ph ph-caret-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>El protocolo está indicado para personas mayores de 18 años con un IMC ≥ 27 acompañado de factores de riesgo metabólico (resistencia a la insulina, dislipemia, hipertensión) o personas con IMC ≥ 30. Cada paciente pasa por una evaluación médica inicial obligatoria para confirmar su aptitud.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ROW (social + discover) ─── -->
+  <div class="footer-row">
+    <div class="social">
+      <a href="https://twitter.com" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter">
+        <i class="ph ph-x-logo"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+        <i class="ph ph-facebook-logo"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+        <i class="ph ph-instagram-logo"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+        <i class="ph ph-linkedin-logo"></i>
+      </a>
+    </div>
+
+    <a href="#inicio" class="discover">
+      Volver Arriba
+      <span class="arrow-down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 15 L12 9 L6 15" />
+        </svg>
+      </span>
+    </a>
+
+    <div class="footer-contact-quick">
+      <span><i class="ph ph-phone"></i> (011) 5238-9000</span>
+      <span><i class="ph ph-envelope-simple"></i> contacto@novametabolic.med</span>
+    </div>
+  </div>
+
+  <!-- ─── FOOTER LEGAL & CLINIC INFO ─── -->
+  <footer class="footer-clinic">
+    <div class="footer-clinic-grid">
+      <div class="f-col">
+        <h4>NovaMetabolic™</h4>
+        <p>Centro Médico de Alta Complejidad en Endocrinología de Precisión y Tratamiento Integral de la Obesidad.</p>
+        <p class="f-sub">Sede Central: Av. del Libertador 4850, CABA, Argentina.</p>
+      </div>
+      <div class="f-col">
+        <h4>Acreditaciones</h4>
+        <p>🏛️ Centro Habilitado por Ministerio de Salud</p>
+        <p>🏅 Miembro Sociedad Argentina de Endocrinología (SAEM)</p>
+      </div>
+      <div class="f-col">
+        <h4>Aviso Médico Legal</h4>
+        <p class="disclaimer-text">
+          La información provista en este sitio web tiene carácter divulgativo. Los tratamientos farmacológicos y prescripciones médicas están sujetos a valoración diagnóstica individualizada por parte de profesionales médicos matriculados.
+        </p>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <p>&copy; 2026 NovaMetabolic™ Precision Medicine Clinic. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ═══════════════════ MODAL DE AGENDAMIENTO ═══════════════════ -->
+<div class="modal-backdrop" id="bookingModal">
+  <div class="clay-card modal-window">
+    <div class="modal-header">
+      <div class="modal-title-group">
+        <span class="eyebrow"><i class="ph ph-calendar-check"></i> Consulta de Admisión</span>
+        <h2>Agendar Consulta Médica</h2>
+      </div>
+      <button class="modal-close-btn" onclick="closeBookingModal()" aria-label="Cerrar modal">
+        <i class="ph ph-x"></i>
+      </button>
+    </div>
+
+    <form id="bookingForm" onsubmit="handleBookingSubmit(event)">
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Modalidad de Consulta *</label>
+          <div class="segmented-control">
+            <label class="seg-btn active mode-pill">
+              <input type="radio" name="modality" value="Telemedicina (Online)" checked>
+              <span><i class="ph ph-video-camera"></i> Telemedicina (Online)</span>
+            </label>
+            <label class="seg-btn mode-pill">
+              <input type="radio" name="modality" value="Presencial (Sede CABA)">
+              <span><i class="ph ph-hospital"></i> Presencial (Sede Central)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="bName">Nombre y Apellido *</label>
+            <input type="text" id="bName" class="clay-input" required placeholder="Ej. Ana Pérez">
+          </div>
+          <div class="form-group">
+            <label for="bPhone">WhatsApp / Teléfono *</label>
+            <input type="tel" id="bPhone" class="clay-input" required placeholder="Ej. +54 9 11 2345-6789">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bEmail">Correo Electrónico *</label>
+          <input type="email" id="bEmail" class="clay-input" required placeholder="ana.perez@email.com">
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="bDate">Fecha Preferida *</label>
+            <input type="date" id="bDate" class="clay-input" required>
+          </div>
+          <div class="form-group">
+            <label for="bTime">Horario Preferido</label>
+            <select id="bTime" class="clay-input">
+              <option value="Mañana (09:00 - 13:00)">Mañana (09:00 - 13:00)</option>
+              <option value="Tarde (14:00 - 19:00)" selected>Tarde (14:00 - 19:00)</option>
+              <option value="Indiferente">Indiferente</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bNotes">Objetivo o notas clínicas (opcional)</label>
+          <textarea id="bNotes" class="clay-input" rows="2" placeholder="Ej. Deseo evaluar tratamiento GLP-1 para perder 15 kg y controlar glucosa..."></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn-ghost" onclick="closeBookingModal()">Cancelar</button>
+        <button type="submit" class="header-cta">
+          <span class="cta-text">Confirmar y Coordinar Cita</span>
+          <span class="cta-dot"><i class="ph ph-check"></i></span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ═══════════════════ TOAST NOTIFICATION ═══════════════════ -->
+<div class="toast-notification clay-card" id="toastNotification">
+  <div class="toast-icon"><i class="ph-fill ph-check-circle"></i></div>
+  <div class="toast-content">
+    <strong id="toastTitle">Solicitud Recibida</strong>
+    <p id="toastMessage">Un especialista coordinará tu cita vía WhatsApp.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════ FLOATING WHATSAPP BUTTON ═══════════════════ -->
+<a href="https://wa.me/5491100000000?text=Hola%20NovaMetabolic,%20deseo%20informaci%C3%B3n%20sobre%20el%20tratamiento%20m%C3%A9dico" target="_blank" rel="noopener" class="floating-wa" aria-label="Contactar por WhatsApp">
+  <i class="ph-fill ph-whatsapp-logo"></i>
+  <span class="wa-label">¿Dudas? Escríbenos</span>
+</a>
+
+<!-- ═══════════════════ GSAP SCRIPTS ═══════════════════ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
